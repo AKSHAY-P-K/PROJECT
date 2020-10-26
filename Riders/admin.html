@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/admin.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        
+        
+        <title>Admin Dashboard</title>
+    </head>
+    <body>
+
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- sidebar -->
+                        <div class="col-lg-2 col-md-3 sidebar fixed-top">
+                            <a href="#" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-3 bottom-border">RIDERS</a>
+                            <div class="bottom-border pb-3">
+                                <img src="images/IMG_0430ed.jpg" width="40" class="rounded-circle mx-3">
+                                <a href="#" class="text-white">Akshay</a>
+                            </div>
+                            <ul class="navbar-nav nav nav-pills flex-column mt-3">
+                                <li class="nav-item"><a data-toggle="pill" href="#pills-home" role="tab" class="nav-link text-white p-2 mb-2 sidebar-link active"><i class="fas fa-home fa-lg text-white mr-3"></i>Dashboard</a></li>
+                                <li class="nav-item"><a data-toggle="pill" href="#pills-area" role="tab" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fas fa-map-marker fa-lg text-white mr-3" aria-hidden="true"></i>Area</a></li>
+                                <li class="nav-item"><a data-toggle="pill" href="#pills-doctor" role="tab" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fas fa-user-md fa-lg text-white mr-3"></i>Doctor</a></li>
+                                <li class="nav-item"><a data-toggle="pill" href="#pills-medicalstore" role="tab" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fas fa-medkit fa-lg text-white mr-3"></i>medical store</a></li>
+                                <li class="nav-item"><a data-toggle="pill" href="#pills-restaurants" role="tab" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fas fa-utensils fa-lg text-white mr-3"></i>Restaurants</a></li>
+                                <li class="nav-item"><a data-toggle="pill" href="#pills-hotel" role="tab" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fas fa-bed fa-lg text-white mr-3"></i>Hotel</a></li>
+                                <li class="nav-item"><a data-toggle="pill" href="#pills-fuel" role="tab" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fas fa-gas-pump fa-lg text-white mr-3"></i>Fuel</a></li>
+                                <li class="nav-item"><a data-toggle="pill" href="#pills-documentation" role="tab" class="nav-link text-white p-2 mb-2 sidebar-link"><i class="fas fa-file-alt fa-lg text-white mr-3"></i>Documentation</a></li>
+                            </ul>
+                        </div> 
+                        <!-- end of sidebar -->
+                        
+                        <!-- top-nav -->
+                
+                        <div class="col-lg-10 col-md-9 ml-auto bg-dark fixed-top py-2 top-navbar">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <h4 class="text-light text-uppercase mb-0">Dashboard</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control search-input" placeholder="search...">
+                                            <button type="button" class="btn btn-white search-button">
+                                                <i class="fas fa-search text-danger"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-comments text-muted fa-lg"></i></a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bell text-muted fa-lg"></i></a></li>
+                                        <li class="nav-item ml-md-auto"><a href="#" class="nav-link" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- end of top-nav -->
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+                                
+                        <!-- model -->
+                        
+                        <div class="modal fade" id="sign-out">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Want to leave?</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                        <div class="modal-body">
+                                            Press logout to leave
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Logout</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- end of model -->
+                        
+                        <!-- cards -->
+                        
+                        <section class="tab-content">
+
+                            <!-- dashboard start -->
+
+                            <div class="container-fluid tab-pane fade show active" id="pills-home" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-8 ml-auto mr-5">
+                                        <div class="row pt-md-5 mt-md-3 mt-3 mb-5">
+                                            <div class="col-lg-3 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between">
+                                                            <i class="fas fa-shopping-cart fa-3x text-warning"></i>
+                                                            <div class="text-right text-secondary">
+                                                                <h6>Sales</h6>
+                                                                <h4>$135,000</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-secondary">
+                                                        <i class="fas fa-sync mr-3"></i>
+                                                        <span>Updated Now</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between">
+                                                            <i class="fas fa-money-bill-alt fa-3x text-success"></i>
+                                                            <div class="text-right text-secondary">
+                                                                <h6>Expenses</h6>
+                                                                <h4>$395,000</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-secondary">
+                                                        <i class="fas fa-sync mr-3"></i>
+                                                        <span>Updated Now</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between">
+                                                            <i class="fas fa-users fa-3x text-info"></i>
+                                                            <div class="text-right text-secondary">
+                                                                <h6>Users</h6>
+                                                                <h4>5,000</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-secondary">
+                                                        <i class="fas fa-sync mr-3"></i>
+                                                        <span>Updated Now</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between">
+                                                            <i class="fas fa-chart-line fa-3x text-danger"></i>
+                                                            <div class="text-right text-secondary">
+                                                                <h6>Visitors</h6>
+                                                                <h4>45,000</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-secondary">
+                                                        <i class="fas fa-sync mr-3"></i>
+                                                        <span>Updated Now</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- dashboard end -->
+                            
+                            
+                            <!-- area -->
+                            
+                            
+                            <div class="container-fluid tab-pane fade" id="pills-area" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-8 ml-auto mr-5">
+                                        <div class=" row pt-md-5 mt-md-3 mt-3 mb-5">
+                                             <div class="col-lg-4 col-md-6 col-sm-6 p-2">
+                                                 <div class="card card-common card-box">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">AREA</h3>
+                                                        <div class=""> 
+                                                            <form method="POST" action="php/area.php">
+                                                                <div class="form-group">
+                                                                   <!-- <label>Name</label> -->
+                                                                    <input type="text" class="form-control" placeholder="area*" name="area" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <!-- <label>Mobile Number</label> -->
+                                                                    <input type="text" class="form-control" placeholder="gps coordinates*" name="gps" />
+                                                                </div>
+                                                            
+                                                                <div class="form-group">
+                                                                    <input type="submit" class="btn btn-danger px-4 mt-4" value="Add">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-md-12 col-sm-12 p-2">
+                                                <table class="table table-dark p-3">
+                                                  <thead>
+                                                    <tr>
+                                                      <!--<th scope="col">#</th>-->
+                                                      <th scope="col">Area</th>
+                                                      <th scope="col">GPS coordinates</th>
+                                                      <th scope="col">Update</th>
+                                                      <th scope="col">Delete</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                      <?php
+                                                        $con=mysqli_connect("localhost","root","","riders");
+                                                        $ins=mysqli_query($con, "select * from area");
+                                                        while($res=mysqli_fetch_array($ins))
+                                                        {
+
+                                                        ?>
+                                                    <tr class="text-white">
+                                                      <!--<th scope="row"><?php echo $res[0]; ?></th> -->
+                                                      <td><?php echo $res[1]; ?></td>
+                                                      <td><?php echo $res[2]; ?></td>
+                                                     <?php  echo "<td>"."<a href=php/updatearea.php?id=$res[0] class='btn btn-danger'>"."update"."</a></td> ";  ?>
+                                                     
+                                                    <?php  echo "<td>"."<a href=php/delete.php?id=$res[0] class='btn btn-danger'>"."Delete"."</a></td> ";  ?>
+                                                    </tr>
+                                                    <?php }  
+                                                    ?>
+                                                    
+                                                  </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                            
+                            <!-- area end -->
+                            
+                            
+                            <!-- doctors -->
+                            
+                            
+                            
+                            <div class="container-fluid tab-pane fade" id="pills-doctor" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-8 ml-auto mr-5">
+                                        <div class=" row pt-md-5 mt-md-3 mt-3 mb-5">
+                                             <div class="col-lg-4 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common card-box">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">DOCTOR'S</h3>
+                                                        <div class=""> 
+                                                            <form method="POST" action="php/doctor.php">
+                                                            	 <select class="form-control mb-3" name="area">
+	                                                            	<?php
+	                                                            	 $con=mysqli_connect("localhost","root","","riders");
+	                                                                 $ins=mysqli_query($con, "select * from area");
+	                                                                 while($res=mysqli_fetch_array($ins))
+	                                                                 {
+
+	                                                            	?>
+                                                                    <option value="<?php echo $res[0]; ?>"><?php echo $res[1];   ?></option>
+                                                               		<?php  } ?>
+                                                                </select> 
+                                                                <div class="form-group">
+                                                                   <!-- <label>Name</label> -->
+                                                                    <input type="text" class="form-control" placeholder="doctorname*" name="doctorname" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <!-- <label>specilization</label> -->
+                                                                    <input type="text" class="form-control" placeholder="specilization*" name="specilization" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <!-- <label>Mobile Number</label> -->
+                                                                    <input type="number" class="form-control" placeholder="mobilenumber*" name="phoneno" />
+                                                                </div>
+                                                            
+                                                                <div class="form-group">
+                                                                    <input type="submit" class="btn btn-danger px-4 mt-4" value="Add">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col-lg-8 col-md-12 col-sm-12 p-2">
+                                                <table class="table table-dark p-3">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">Doc_id</th>
+                                                      <th scope="col">area</th>
+                                                      <th scope="col">doctor name</th>
+                                                      <th scope="col">specilization</th>
+                                                      <th scope="col">phoneno</th>
+                                                      <th scope="col">Update</th>
+                                                      <th scope="col">Delete</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <?php
+                                                        $con=mysqli_connect("localhost","root","","riders");
+                                                        $ins=mysqli_query($con, "select * from doctor");
+                                                        while($res=mysqli_fetch_array($ins))
+                                                        {
+                                                        	$area=$res[1];
+                                                            $ins1=mysqli_query($con, "select * from area where areaid='$area'");
+                                                            while($res1=mysqli_fetch_array($ins1)){
+                                                        $a=$res1[1];
+
+                                                        ?>
+                                                    <tr class="text-white">
+                                                      <td><?php echo $res[0]; ?></td>
+                                                      <td><?php echo $a; }?></td>
+                                                      <td><?php echo $res[2]; ?></td>
+                                                      <td><?php echo $res[3]; ?></td>
+                                                      <td><?php echo $res[4]; ?></td>
+                                                      <?php  echo "<td>"."<a href=php/updatedoctor.php?id=$res[0] class='btn btn-danger'>"."update"."</a></td> ";  ?>
+                                                     
+                                                    <?php  echo "<td>"."<a href=php/doctordelete.php?id=$res[0] class='btn btn-danger'>"."Delete"."</a></td> ";  ?>
+                                                    </tr>
+                                                    <?php }  
+                                                    ?>
+                                                    
+                                                  </tbody>
+                                                </table>
+                                            </div>
+                                        </div>        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- doctors end -->
+                            
+                            <!-- medical stores -->
+                            
+                             <div class="container-fluid tab-pane fade" id="pills-medicalstore" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-8 ml-auto mr-5">
+                                        <div class=" row pt-md-5 mt-md-3 mt-3 mb-5">
+                                             <div class="col-lg-4 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common card-box">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">MEDICAL STORES</h3>
+                                                        <div class=""> 
+                                                            <form method="POST" action="php/medicalstore.php">
+                                                                <select class="form-control mb-3" name="area">
+	                                                            	<?php
+	                                                            	 $con=mysqli_connect("localhost","root","","riders");
+	                                                                 $ins=mysqli_query($con, "select * from area");
+	                                                                 while($res=mysqli_fetch_array($ins))
+	                                                                 {
+
+	                                                            	?>
+                                                                    <option value="<?php echo $res[0]; ?>"><?php echo $res[1];   ?></option>
+                                                               		<?php  } ?>
+                                                                </select>
+                                                                <div class="form-group">
+                                                                   <!-- <label>Name</label> -->
+                                                                    <input type="text" class="form-control" placeholder="storename*" name="storename" />
+                                                                </div>
+                                                               
+                                                                <div class="form-group">
+                                                                    <!-- <label>Mobile Number</label> -->
+                                                                    <input type="number" class="form-control" placeholder="mobilenumber*" name="phoneno" />
+                                                                </div>
+                                                            
+                                                                <div class="form-group">
+                                                                    <input type="submit" class="btn btn-danger px-4 mt-4" value="Add">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="col-lg-8 col-md-12 col-sm-12 p-2">
+                                                <table class="table table-dark p-3">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">area</th>
+                                                      <th scope="col">Store_Name</th>
+                                                      <th scope="col">Phoneno</th>
+                                                      <th scope="col">Update</th>
+                                                      <th scope="col">Delete</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <?php
+                                                        $con=mysqli_connect("localhost","root","","riders");
+                                                        $ins=mysqli_query($con, "select * from medicalstore");
+                                                        while($res=mysqli_fetch_array($ins))
+                                                        {
+                                                        	$area=$res[1];
+                                                            $ins1=mysqli_query($con, "select * from area where areaid='$area'");
+                                                            while($res1=mysqli_fetch_array($ins1)){
+                                                        $a=$res1[1];
+
+                                                        ?>
+                                                    <tr class="text-white">
+                                                      
+                                                      <td><?php echo $a; }?></td>
+                                                      <td><?php echo $res[2]; ?></td>
+                                                      <td><?php echo $res[3]; ?></td>
+                                                   
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                     
+                                                    <?php  echo "<td>"."<a href=php/medicaldelete.php?id=$res[0] class='btn btn-danger'>"."Delete"."</a></td> ";  ?>
+                                                    </tr>
+                                                    <?php }  
+                                                    ?>
+                                                    
+                                                  </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- medical stores end-->
+                            
+                            <!-- restaurant -->
+                            
+                             <div class="container-fluid tab-pane fade" id="pills-restaurants" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-8 ml-auto mr-5">
+                                        <div class=" row pt-md-5 mt-md-3 mt-3 mb-5">
+                                             <div class="col-lg-4 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common card-box">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">RESTAURANTS</h3>
+                                                        <div class=""> 
+                                                            <form method="POST" action="">
+                                                                <select class="form-control mb-3">
+                                                                    <option>area id</option>
+                                                                </select>
+                                                                <div class="form-group">
+                                                                   <!-- <label>Name</label> -->
+                                                                    <input type="text" class="form-control" placeholder="name*" name="shopname" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                   <!-- <label>Name</label> -->
+                                                                    <input type="text" class="form-control" placeholder="address*" name="address" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <!-- <label>Mobile Number</label> -->
+                                                                    <input type="number" class="form-control" placeholder="mobilenumber*" name="phoneno" />
+                                                                </div>
+                                                            
+                                                                <div class="form-group">
+                                                                    <input type="submit" class="btn btn-danger px-4 mt-4" value="Add">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-md-12 col-sm-12 p-2">
+                                                <table class="table table-dark p-3">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col"></th>
+                                                      <th scope="col"></th>
+                                                      <th scope="col"></th>
+                                                      <th scope="col">Update</th>
+                                                      <th scope="col">Delete</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- restaurant end -->
+                            
+                            <!-- hotel -->
+                            
+                             <div class="container-fluid tab-pane fade" id="pills-hotel" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-8 ml-auto mr-5">
+                                        <div class=" row pt-md-5 mt-md-3 mt-3 mb-5">
+                                             <div class="col-lg-4 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common card-box">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">HOTEL</h3>
+                                                        <div class=""> 
+                                                            <form method="POST" action="">
+                                                                <select class="form-control mb-3">
+                                                                    <option>area id</option>
+                                                                </select>
+                                                                <div class="form-group">
+                                                                   <!-- <label>Name</label> -->
+                                                                    <input type="text" class="form-control" placeholder="name*" name="name" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                   <!-- <label>Name</label> -->
+                                                                    <input type="text" class="form-control" placeholder="address*" name="address" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <!-- <label>Mobile Number</label> -->
+                                                                    <input type="number" class="form-control" placeholder="mobilenumber*" name="phoneno" />
+                                                                </div>
+                                                            
+                                                                <div class="form-group">
+                                                                    <input type="submit" class="btn btn-danger px-4 mt-4" value="Add">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-md-12 col-sm-12 p-2">
+                                                <table class="table table-dark p-3">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">acc_id</th>
+                                                      <th scope="col">area_id</th>
+                                                      <th scope="col">address</th>
+                                                      <th scope="col">phoneno</th>
+                                                      <th scope="col">Update</th>
+                                                      <th scope="col">Delete</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- hotel end -->
+                            
+                            
+                            
+                            <!-- fuel -->
+                            
+                             <div class="container-fluid tab-pane fade" id="pills-fuel" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-8 ml-auto mr-5">
+                                        <div class=" row pt-md-5 mt-md-3 mt-3 mb-5">
+                                             <div class="col-lg-4 col-md-6 col-sm-6 p-2">
+                                                <div class="card card-common card-box">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">FUEL</h3>
+                                                        <div class=""> 
+                                                            <form method="POST" action="">
+                                                                <select class="form-control mb-3">
+                                                                    <option>area id</option>
+                                                                </select>
+                                                                <div class="form-group">
+                                                                   <!-- <label>Name</label> -->
+                                                                    <input type="text" class="form-control" placeholder="address*" name="address" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <!-- <label>Mobile Number</label> -->
+                                                                    <input type="number" class="form-control" placeholder="mobilenumber*" name="phoneno" />
+                                                                </div>
+                                                            
+                                                                <div class="form-group">
+                                                                    <input type="submit" class="btn btn-danger px-4 mt-4" value="Add">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-md-12 col-sm-12 p-2">
+                                                <table class="table table-dark p-3">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">fuel_id</th>
+                                                      <th scope="col">area_id</th>
+                                                      <th scope="col">address</th>
+                                                      <th scope="col">phoneno</th>
+                                                      <th scope="col">Update</th>
+                                                      <th scope="col">Delete</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                      <tr>
+                                                      
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><button type="button" class="btn btn-danger">Update</button></td>
+                                                      <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- fuel end -->
+
+                        </section>
+                        
+                        <!-- end of cards -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

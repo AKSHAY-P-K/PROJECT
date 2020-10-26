@@ -1,0 +1,23 @@
+body{
+    background: url('../images/img1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.btn1{
+    background: red;
+    color: white;
+}
+.btn:hover{
+    background: black;
+    color: white;
+}
+.skip{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    float: right;
+    margin-right: 3%;
+}
+.skip:hover{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,127 @@
+body{
+    background: #FAF8F7;
+    margin: 0;
+    padding: 0;
+}
+.nav-my, a{
+    background: black ;
+    color: white;
+}
+ li a{
+    color: white !important;
+}
+.bran{
+    font-size: 1.7rem;
+}
+.drop{
+    background: black;
+     
+}
+.drop:hover a{
+    background: black;
+}
+.searchbar{
+    border-radius: 10px;
+}
+.badgenotify{
+   background:red;
+   position:absolute;
+   
+}
+.cardsha{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.itemimage:hover{
+    transform: scale(1.1);
+}
+/* SOCIAL MEDIA ICONS */
+
+.social{
+    position: fixed;
+    top: 38%;
+    left: 0;
+    text-decoration: none;
+    list-style: none;
+    background: transparent;
+    color: aliceblue;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  opacity: 0.4;
+}
+
+.fa:hover {
+    text-decoration: none;
+    opacity: 5;
+    padding: 15px;
+    font-size: 23px;
+    width: 50px;
+    text-align: center;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dc4e41;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+.social {
+    display: none;
+  }
+}
+
+/* CONTACT */
+.fot1{
+    background-color: #ff6600;
+    color: black;
+}
+.fot{
+    background: #272727;
+    color: white;
+}
+.line{
+    width: 80%;
+    height: 2px;
+    margin: 0  auto;
+    border-radius: 4px;
+    background-color: grey;
+    margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .sort{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .sortlist{
+        display: none;
+    }
+}
+/*CART*/
+
+.boxs{
+    padding-top: 90px;
+}
+@media only screen and (max-width: 768px) {
+    .pricebox{
+     padding-top: 20px;
+}
+}
